@@ -6,7 +6,8 @@ from .models import Topic, Entry
 from .forms import TopicForm, EntryForm
 
 # Create your views here.
-
+def sample(request):
+    return render(request, 'learning_logs/sample.html')
 def index(request):
     return render(request, 'learning_logs/index.html')
 
